@@ -6,10 +6,10 @@ var bodyParser = require('body-parser');
 
 //start mysql connection
 var connection = mysql.createConnection({
-  host     : 'localhost', //mysql database host name
-  user     : 'root', //mysql database user name
-  password : '', //mysql database password
-  database : 'test' //mysql database name
+  host     : '10.115.32.3', //mysql database host name
+  user     : 'node_mysql_user', //mysql database user name
+  password : '1gFb6GvKIeOAX1RC', //mysql database password
+  database : 'node_mysql_example' //mysql database name
 });
 
 connection.connect(function(err) {
