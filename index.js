@@ -35,7 +35,7 @@ var server = app.listen(3000,  "127.0.0.1", function () {
 
 });
 
-//rest api to get all customers
+//rest api to get all customer
 app.get('/customer', function (req, res) {
    connection.query('select * from customer', function (error, results, fields) {
 	  if (error) throw error;
@@ -44,7 +44,7 @@ app.get('/customer', function (req, res) {
 });
 //rest api to get a single customer data
 app.get('/customer/:id', function (req, res) {
-   connection.query('select * from customers where Id=?', [req.params.id], function (error, results, fields) {
+   connection.query('select * from customer where Id=?', [req.params.id], function (error, results, fields) {
 	  if (error) throw error;
 	  res.end(JSON.stringify(results));
 	});
