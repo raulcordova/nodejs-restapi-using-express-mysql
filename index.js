@@ -4,7 +4,7 @@ var app = express();
 var mysql      = require('mysql');
 var bodyParser = require('body-parser');
 
-//start mysql connection
+//start mysql connection ok
 var connection = mysql.createConnection({
   host     : '10.115.32.3', //mysql database host name
   user     : 'node_mysql_user', //mysql database user name
