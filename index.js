@@ -68,7 +68,7 @@ app.put('/customer', function (req, res) {
 	});
 });
 
-//rest api to delete record from mysql database
+//rest api to delete record from mysql database ok
 app.delete('/customer', function (req, res) {
    console.log(req.body);
    connection.query('DELETE FROM `customer` WHERE `Id`=?', [req.body.Id], function (error, results, fields) {
